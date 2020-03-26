@@ -6,12 +6,12 @@ dcInd = sub2ind(size(app.I.Height.bw), round(dcSub(2)), round(dcSub(1)));
 % hold(app.UIAxes_4, 'on');
 % plot(app.UIAxes_4, dcSub(1), dcSub(2), 'r+')
 
-for dx = 1:app.I.ExsnLocs.NumObjects
+for dx = 1:app.ExsnLocs.NumObjects
     
-    if any(dcInd == app.I.ExsnLocs.PixelIdxList{dx})
+    if any(dcInd == app.ExsnLocs.PixelIdxList{dx})
         
         tDCO = zeros(size(app.I.Height.bw));%temp declump object
-        tDCO(app.I.ExsnLocs.PixelIdxList{dx}) = 1;
+        tDCO(app.ExsnLocs.PixelIdxList{dx}) = 1;
         
 %         figure(45), imagesc(tDCO)
         
@@ -58,17 +58,17 @@ for dx = 1:app.I.ExsnLocs.NumObjects
             
             if strcmp(questdlg('Accept declumped object?'), 'Yes')
                 
-                app.I.ExsnLocs.NumObjects = app.I.ExsnLocs.NumObjects + 1;%numel(unique(L)) - 2;
+                app.ExsnLocs.NumObjects = app.ExsnLocs.NumObjects + 1;%numel(unique(L)) - 2;
                 x = unique(L(L>0));
                 for ex = 1:2  %max(L(:))
                     
                     if ex == 1
                         
-                        app.I.ExsnLocs.PixelIdxList{dx} = find(L == x(ex));
+                        app.ExsnLocs.PixelIdxList{dx} = find(L == x(ex));
                         
                     else
-                        idx = numel(app.I.ExsnLocs.PixelIdxList) + 1;
-                        app.I.ExsnLocs.PixelIdxList{idx} = find(L == x(ex));
+                        idx = numel(app.ExsnLocs.PixelIdxList) + 1;
+                        app.ExsnLocs.PixelIdxList{idx} = find(L == x(ex));
                     end
                     
                 end
@@ -89,8 +89,8 @@ end % end loop through objects
 
 app.I.Height.bw = zeros(size(app.I.Height.bw));
 app.UIAxes_4.Title.String = 'Height Processed';
-for dx = 1:app.I.ExsnLocs.NumObjects % need to rebuild the bw height mask after declump
-   app.I.Height.bw(app.I.ExsnLocs.PixelIdxList{dx}) = 1;   
+for dx = 1:app.ExsnLocs.NumObjects % need to rebuild the bw height mask after declump
+   app.I.Height.bw(app.ExsnLocs.PixelIdxList{dx}) = 1;   
 end
 
 app.h4 = imagesc(app.UIAxes_4, app.I.Height.data.*app.I.Height.bw); drawnow;
