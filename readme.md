@@ -18,7 +18,7 @@ If a compatible version of MATLAB is installed on your system, navigate to the s
 
 <h2>Usage Example </h2>
 1. Open the app
-![Opening Screen](/images/OpeningScreen.png)
+![Opening Screen](/images/OpeningScreen.PNG)
 
 <h2>Operations</h2>
   
@@ -27,6 +27,6 @@ Each operation is ordered on the left hand-sde of the app, in the general order 
   1. Read data (currently only in [Gwyydion format](http://gwyddion.net/))
   
   
-<h2>To be updated in next version <h2/>
+<h2>To be updated in next version </h2>
   
   1. Loading of other AFM formats
