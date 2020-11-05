@@ -18,7 +18,9 @@ If a compatible version of MATLAB is installed on your system, navigate to the s
 
 <h2>Usage Example </h2>
 1. Open the app
+
 ![Opening Screen](/images/OpeningScreen.PNG)
+Format: ![Alt Text](url)
 
 <h2>Operations</h2>
   
