@@ -25,7 +25,7 @@ If a compatible version of MATLAB is installed on your system, navigate to the s
 Using open file button. Height data will be dislayed in the 'Height Raw Data' window. 
 Other channels can be viewed in the channel window (Note currently files should be converted to .gwy format using [Gwyydion format](http://gwyddion.net/) software).
 
-![Opening Screen](/images/OpenFile.PNG){:height="50%" width="50%"}
+![Opening Screen](/images/OpenFile.PNG)
 
 2. **Zero Channels (optional)**
 
