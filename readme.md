@@ -3,6 +3,8 @@
 A tool to extract average properties from all channels from AFM images of exosomes. Images are thresholded based on the height channel. The height channel is used as a mask to extract properties from the other channels.
 Averaged properties within the masked areas can be output to Excel, .MAT or sqLite formats.
 
+
+
 <h2> Installation (using installer) </h2>
 
 1. Download or clone repo
@@ -17,11 +19,17 @@ If a compatible version of MATLAB is installed on your system, navigate to the s
 
 <h2>Usage Example </h2>
 
-![Opening Screen](/images/OpeningScreen.PNG)
+
 1. **Open AFM file**
-Using open file button. (Note currently files should be conveerted to .gwy format using G[Gwyydion format](http://gwyddion.net/) software )
+
+Using open file button. Height data will be dislayed in the 'Height Raw Data' window. 
+Other channels can be viewed in the channel window (Note currently files should be converted to .gwy format using [Gwyydion format](http://gwyddion.net/) software).
+
+![Opening Screen](/images/OpenFile.PNG = 600x380)
 
 2. **Zero Channels (optional)**
+
+Subtract the minimum pixel value from the 
 
 
 3. **Polynomial Levelling (optional)**
