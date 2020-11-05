@@ -22,7 +22,7 @@ If a compatible version of MATLAB is installed on your system, navigate to the s
 (Note this app was developed using MATLAB 2019a). 
 
 <h2>Usage Example </h2>
-
+Example input data is located at the top level of the repo, in example1.gwy and example2.gwy. The example below is performed on example2.gwy.
 
 1. **Open AFM file**
 
