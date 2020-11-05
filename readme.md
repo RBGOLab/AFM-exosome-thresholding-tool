@@ -8,27 +8,50 @@ Averaged properties within the masked areas can be output to Excel, .MAT or sqLi
 1. Download or clone repo
 2. Navigate to directory corresponding to your operating system
 3. For Windows operating systems, run the ExoThres_Installer.exe
-4. For Linux operating systems, ...
-5. For macOS ...
+4. For macOS ...
 
 
 <h2>Run in MATLAB </h2>
 If a compatible version of MATLAB is installed on your system, navigate to the source directory and open the AFM_Exosome_App.mlapp in app designer 
-(Note this app was developed using MATLAB 2019a) 
+(Note this app was developed using MATLAB 2019a). 
 
 <h2>Usage Example </h2>
-1. Open the app
 
 ![Opening Screen](/images/OpeningScreen.PNG)
-Format: ![Alt Text](url)
+1. **Open AFM file**
+Using open file button. (Note currently files should be conveerted to .gwy format using G[Gwyydion format](http://gwyddion.net/) software )
 
-<h2>Operations</h2>
-  
-Each operation is ordered on the left hand-sde of the app, in the general order that they should be applied. Buttons are only enabled once the prerequisite operations have been peformed. The operations are as follows:
-  
+2. **Zero Channels (optional)**
+
+
+3. **Polynomial Levelling (optional)**
+
+
+4. **Median Filter (optional)**
+
+
+5. **Threshold**
+
+
+6. **Remove small or large Objects (optional)**
+
+
+7. **Declump Objects (optional)**
+
+
+8. **Locate Object Centres** 
+
+
+9. **Write Results to File**
+
+
+
+
+
   1. Read data (currently only in [Gwyydion format](http://gwyddion.net/))
   
   
 <h2>To be updated in next version </h2>
   
   1. Loading of other AFM formats
+  2. Compile macOS and Linux versions of the installer
