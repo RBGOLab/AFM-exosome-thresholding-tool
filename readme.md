@@ -23,13 +23,16 @@ If a compatible version of MATLAB is installed on your system, navigate to the s
 1. **Open AFM file**
 
 Using open file button. Height data will be dislayed in the 'Height Raw Data' window. 
-Other channels can be viewed in the channel window (Note currently files should be converted to .gwy format using [Gwyydion format](http://gwyddion.net/) software).
+Other channels can be viewed in the Channels window (Note currently files should be converted to .gwy format using [Gwyydion format](http://gwyddion.net/) software).
 
-![Opening Screen](/images/OpenFile.PNG){:height="50%" width="50%"}
+![Opening Screen](/images/OpenFile.PNG)
 
 2. **Zero Channels (optional)**
 
-Subtract the minimum pixel value from the 
+Subtract the minimum pixel value from the height and/or the adhesion channels (so all values are greater than one) using the 'Zero Height' and 'Zero Adhesion' buttons respectively. 
+Confirmation of these operations are dislayed in the history window.
+
+![Zero screen](/images/HeightZeroed.PNG) 
 
 
 3. **Polynomial Levelling (optional)**
