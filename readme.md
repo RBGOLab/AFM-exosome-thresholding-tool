@@ -47,9 +47,9 @@ Confirmation of these operations are dislayed in the history window.
 
 
 4. **Median Filter (optional) and Threshold**
-Pressing the filter button will apply an Otsu threshold to the height channel. The filtered image will appear in the 'Height Processed' plot window. If the thresholded image is noisy, pressing the filter button will apply a median filter to the 
-image which will help remove noise. The median filter can be applied multiple times. The 'Height Processed' window will update.
-
+Pressing the 'Auto Threshold' button will apply an Otsu threshold to the height channel. The filtered image will appear in the 'Height Processed' plot window. If the thresholded image is noisy, pressing the 'Filter' button will apply a median filter to the 
+image which will help remove noise. The median filter can be applied multiple times. Pressing the 'Reset' button will remove all thresholding. If the auto-filter is unsucessful, a threshold level can be defined manually using the 'Manual Threshold' slider. 
+After applying thresholding and filtering the 'Height Processed' window will update.
 ![Threshold screen](/images/threshold.PNG)
 
 
