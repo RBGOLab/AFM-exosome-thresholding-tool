@@ -5,7 +5,7 @@ Averaged properties within the masked areas can be output to Excel, .MAT or sqLi
 
 The intention is not to replace more comprehensive AFM analysis tools, but as a pipeline to efficiently create masks based on a single image channel 
 
-If you use this app please cite ...
+If you use this app please cite [Gazze et al 2021](https://pubs.rsc.org/en/content/articlelanding/2021/nr/d0nr09235e)
 
 If you would like to use this software but are haivng problems with processing your datasets, or would like the app to include features not yet implemented please create an issue.
 
@@ -14,7 +14,7 @@ If you would like to use this software but are haivng problems with processing y
 1. Download or clone repo
 2. Navigate to directory corresponding to your operating system
 3. For Windows operating systems, run the ExoThres_Installer.exe
-4. For macOS ...
+
 
 
 <h2>Run in MATLAB </h2>
